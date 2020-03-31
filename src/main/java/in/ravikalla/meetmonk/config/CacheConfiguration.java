@@ -45,6 +45,8 @@ public class CacheConfiguration {
             createCache(cm, in.ravikalla.meetmonk.domain.User.class.getName());
             createCache(cm, in.ravikalla.meetmonk.domain.Authority.class.getName());
             createCache(cm, in.ravikalla.meetmonk.domain.User.class.getName() + ".authorities");
+            createCache(cm, in.ravikalla.meetmonk.domain.Appointments.class.getName());
+            createCache(cm, in.ravikalla.meetmonk.domain.Appointments.class.getName() + ".users");
             // jhipster-needle-ehcache-add-entry
         };
     }
